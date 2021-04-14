@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block title %}Home{% endblock %}
+
+{% block body %}
+
+    <h1>Welcome</h1>
+
+    {% if current_user %}
+        Hello {{ current_user.name }}.
+
+        <a href="/php-mvc/public/logout">Log out</a>.
+    {% else %}
+        <a href = "/php-mvc/public/signup/new">Sign up</a> or <a href = "/php-mvc/public/login">Log in</a>.
+    {% endif %}
+
+{% endblock %}
+

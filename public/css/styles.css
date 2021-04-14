@@ -1,0 +1,16 @@
+.alert {
+    border: 1px solid #ccc;
+    padding: 6px;
+}
+
+.alert-info{
+    color: yellow;
+}
+
+.alert-success{
+    color: green;
+}
+
+.alert-warning{
+    color: red;
+}
